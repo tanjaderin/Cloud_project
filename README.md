@@ -18,5 +18,10 @@ trusted_domains 1 --value=nextcloud
 Nextcloud becomes accessible at http://localhost:8080. This URL points the browser to the port 8080 on your the local machine, where Docker has mapped the internal port used by the Nextcloud container to be accessible from the host system.This makes it easy to interact with Nextcloud instance as if it were running directly on your machine, providing a direct way to manage files, users, and settings on its web interface.
 
 The Locust testing framework becomes accessible at http://localhost:8081. Similar to how Nextcloud is set up, the Locust service is configured on a specific port inside its container, which Docker maps to 8081 on the host machine.
+Before initiating the locust tests, generate the required Python files by executing the test_files.py script.
+To run the script, navigate to the locust and execute the following command
 
+```bash
+python test_files.py
+```
 
